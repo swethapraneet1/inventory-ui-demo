@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve -o",
     "build": "ng build",
     "build-prod": "ng build --prod --aot",
     "docker-build": "npx -p @angular/cli@9 ng build --prod --aot",
